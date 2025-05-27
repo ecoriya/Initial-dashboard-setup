@@ -1,6 +1,6 @@
-/* src/styles/component-specific.css */
 
-/* Example for DashboardOverview */
+
+
 .dashboard-overview {
   padding: 20px;
   background-color: #f9fafb;
@@ -13,17 +13,17 @@
   color: #333;
 }
 
-/* Example for AnatomySection */
+
 .anatomy-section {
   display: flex;
   justify-content: space-around;
   padding: 15px;
 }
 
-/* Example for HealthStatusCards */
+
 .health-status-cards {
   display: flex;
   gap: 15px;
 }
 
-/* Add more as needed for each component */
+

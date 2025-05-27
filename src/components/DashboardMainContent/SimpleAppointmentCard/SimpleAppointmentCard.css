@@ -4,8 +4,8 @@
   gap: 1rem;
   background-color: #ffffff;
   padding: 1rem 1.25rem;
-  border-radius: 1rem; /* consistent with other cards */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04); /* soften shadow */
+  border-radius: 1rem; 
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04); 
   max-width: 400px;
   width: 100%;
   cursor: default;
@@ -13,7 +13,7 @@
 }
 
 .simple-appointment-card:hover {
-  background-color: #f0f6ff; /* softer blue */
+  background-color: #f0f6ff;
 }
 
 .icon {
@@ -22,8 +22,8 @@
   height: 40px;
   text-align: center;
   line-height: 40px;
-  background-color: #e0f2fe; /* light blue background */
-  color: #2563eb; /* blue icon color */
+  background-color: #e0f2fe; 
+  color: #2563eb; 
   border-radius: 0.75rem;
   flex-shrink: 0;
 }
@@ -32,11 +32,11 @@
   margin: 0;
   font-size: 1.05rem;
   font-weight: 600;
-  color: #1f2937; /* dark neutral title */
+  color: #1f2937; 
 }
 
 .details p {
   margin: 0.25rem 0 0;
   font-size: 0.875rem;
-  color: #6b7280; /* muted gray */
+  color: #6b7280; 
 }

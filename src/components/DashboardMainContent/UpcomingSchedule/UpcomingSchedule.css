@@ -1,34 +1,51 @@
 .upcoming-schedule {
-  background-color:white;
+  background-color: white;
   padding: 20px;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  width: 98%;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .upcoming-schedule h3 {
-  font-size: 18px;
+  font-size: 1.25rem; 
   margin-bottom: 16px;
   color: #0077cc;
+  font-weight: 600;
+}
+
+
+.upcoming-schedule .days-container {
+  display: flex;
+  justify-content: flex-start; 
+  gap: 24px; 
+  margin-top: 24px;
+  flex-wrap: nowrap; 
+}
+
+.upcoming-schedule .day {
+  flex: 0 0 auto; 
+  min-width: 250px; 
+  margin-bottom: 0; 
 }
 
 .upcoming-schedule h4 {
-  font-size: 14px;
-  color: #666;
-  margin-top: 16px;
+  font-size: 1rem;
+  color: #475569;
+  margin-top: 24px;
   margin-bottom: 8px;
-  width: 200%;
-}
-
-.upcoming-schedule > div {
-  margin-bottom: 24px;
-  width: 200%;
 }
 
 .appointment-list {
   display: flex;
-  flex-wrap: wrap;      /* Allow wrapping to next line */
-  gap: 16px;            /* Space between cards */
+  flex-wrap: wrap;
+  gap: 16px;
   margin-top: 8px;
 }
 
+.no-appointments {
+  font-size: 1rem;
+  color: #999999;
+  margin-top: 16px;
+}

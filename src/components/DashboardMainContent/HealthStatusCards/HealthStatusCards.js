@@ -13,6 +13,7 @@ const mockCards = [
 
 const HealthStatusCards = () => {
   return (
+    
     <div className="health-status-cards">
       {mockCards.map((card, index) => (
         <div key={index} className="card">
@@ -22,7 +23,9 @@ const HealthStatusCards = () => {
             <p>Status: {card.status}</p>
             <p>Date: {card.date}</p>
           </div>
+          
         </div>
+        
       ))}
     </div>
   );

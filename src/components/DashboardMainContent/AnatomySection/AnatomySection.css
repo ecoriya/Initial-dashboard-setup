@@ -1,9 +1,11 @@
 .anatomy-section {
+   overflow-x: auto;
   display: flex;
-   margin-bottom: 10px;
+  margin-bottom: 10px;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-left: 0.5rem; /* or 0 */
+  text-overflow: black;
+  padding-left: 0.5rem; 
 }
 
 .anatomy-card {
@@ -11,7 +13,7 @@
   border-radius: 16px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
   padding: 1rem;
-  max-width: 700px; /* Adjust width */
+  max-width: 700px; 
   width: 400%;
 }
 
@@ -23,38 +25,49 @@
 
 .anatomy-img {
   width: 100%;
-  max-height: 420px;
+  max-height: 700px;
   object-fit: contain;
   display: block;
 }
 
 .label {
-  font-size: 0.75rem; /* Smaller text */
+  font-size: 0.75rem; 
   padding: 2px 6px;
   border-radius: 6px;
   background-color: rgba(0, 0, 0, 0.06);
 }
+.label.teeth,
+.label.heart {
+  color: #228B22; 
+}
+
+.label.lungs,
+.label.bone {
+  text-shadow: #B22222;
+  color: #B22222; 
+}
 
 .label.healthy {
-  background-color: rgba(0, 255, 0, 0.15);
+  text-shadow: #228B22;
+  
   color: #228B22;
 }
 
 
 .label.issue {
-  background-color: rgba(255, 0, 0, 0.2);
+
   color: #B22222;
 }
 .anatomy-health {
   display: flex;
-  gap: 16px;  /* reduce horizontal gap */
-  flex-wrap: nowrap; /* force side-by-side */
+  gap: 16px;  
+  flex-wrap: nowrap; 
   width: 100%;
   align-items: flex-start;
 }
 .anatomy-health > * {
   flex: 1 1 50%;
-  min-width: 100; /* prevent wrapping */
+  min-width: 100; 
 }
 .left-top {
   display: flex;

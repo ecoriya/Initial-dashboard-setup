@@ -19,7 +19,7 @@ const DashboardMainContent = () => {
           <ActivityFeed />
         </div>
 
-        {/* ✅ Add scroll wrapper around right-top */}
+       
         <div className="right-top">
   <div className="calendar-scroll-wrapper">
     <CalendarView />

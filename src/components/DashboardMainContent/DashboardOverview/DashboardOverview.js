@@ -10,14 +10,19 @@ const DashboardOverview = () => {
           type="text"
           className="search-bar"
           placeholder="Search..."
-          disabled // disables the search input
+          disabled 
         />
+        
         <div className="notification-icon">
-          <Bell size={20} color="#4a6cf7" /> {/* Blue bell color */}
+          
+          <Bell size={20} color="#4a6cf7" />
         </div>
+        
       </div>
 
+
       <h2 className="dashboard-title">Dashboard</h2>
+      
     </section>
   );
 };

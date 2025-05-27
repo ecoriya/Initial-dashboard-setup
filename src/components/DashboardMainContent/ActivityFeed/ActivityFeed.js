@@ -1,5 +1,5 @@
 import React from "react";
-import { CalendarDays } from "lucide-react"; // Optional: replace or remove if you use Font Awesome
+import { CalendarDays } from "lucide-react"; 
 import "./ActivityFeed.css";
 
 const ActivityFeed = () => {
@@ -19,6 +19,8 @@ const ActivityFeed = () => {
           <div className="bar" style={{ height: "20%" }}><span>Wed</span></div>
           <div className="bar" style={{ height: "80%" }}><span>Thu</span></div>
           <div className="bar" style={{ height: "40%" }}><span>Fri</span></div>
+          <div className="bar" style={{ height: "20%" }}><span>Sat</span></div>
+          <div className="bar" style={{ height: "10%" }}><span>Sun</span></div>
         </div>
       </div>
     </section>

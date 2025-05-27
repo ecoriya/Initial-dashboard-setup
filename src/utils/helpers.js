@@ -1,4 +1,4 @@
-// src/utils/helpers.js
+
 
 export function capitalize(str) {
   if (!str) return "";

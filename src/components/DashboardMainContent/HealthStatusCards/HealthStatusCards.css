@@ -1,5 +1,5 @@
 .health-status-cards {
-  flex: 0 0 240px;          /* Fixed width */
+  flex: 0 0 240px;          
   max-width: 240px;
   width: 100%;
   display: flex;
@@ -15,10 +15,10 @@
   background: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
-  height: 90px; /* reduced height */
-  min-width: 80px;   /* reduced from 100px */
-  max-width: 220px;  /* optional: limit max width */
-  width: 100%;       /* make card take available width of container */
+  height: 90px; 
+  min-width: 80px;   
+  max-width: 220px;  
+  width: 100%;       
 }
 
 

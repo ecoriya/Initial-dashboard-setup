@@ -1,23 +1,31 @@
 .dashboard-main-content {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  padding: 1rem; /* Optional, for breathing space */
+  padding: 1rem;
+  background-color: #f9fafb; /* Subtle background for clarity */
 }
 
-/* .top-section flex container */
+/* Flex row for top section remains unchanged */
 .top-section {
   display: flex;
   flex-wrap: nowrap;
   gap: 24px;
-  width: max-content; /* Allows natural width and horizontal scroll */
+  width: max-content;
 }
 
-/* Left and right panels */
+/* Prevent flex items from shrinking */
 .left-top, .right-top {
-  flex-shrink: 0; /* Prevent panels from shrinking too small */
+  flex-shrink: 0;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05); /* Subtle shadow for separation */
+  transition: box-shadow 0.3s ease; /* Smooth hover effect */
 }
 
-/* Scroll wrapper for calendar */
+.left-top:hover, .right-top:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Scroll area styling */
 .calendar-scroll-wrapper {
   overflow-x: auto;
   max-width: 100%;
@@ -25,12 +33,13 @@
   scrollbar-width: thin;
   scrollbar-color: #ccc transparent;
   padding-bottom: 8px;
-  border-radius: 8px; /* Optional, smooth edges */
+  border-radius: 8px;
   box-sizing: border-box;
-  border: 1px solid #ddd; /* Optional: subtle border to distinguish area */
+  border: 1px solid #ddd;
+  background-color: #fff;
 }
 
-/* Scrollbar styling */
+/* WebKit scrollbar enhancements */
 .calendar-scroll-wrapper::-webkit-scrollbar {
   height: 8px;
 }
@@ -40,7 +49,6 @@
   border-radius: 4px;
 }
 
-/* Responsive tweaks */
 @media (max-width: 1024px) {
   .dashboard-main-content {
     padding: 0.75rem;
@@ -62,8 +70,21 @@
   }
 }
 
-/* Optional: Ensure calendar-grid inside calendar-scroll-wrapper has a min width
-   to trigger scrolling when container is narrow */
+/* Calendar grid responsiveness */
 .calendar-scroll-wrapper .calendar-grid {
-  min-width: 720px; /* Or adapt depending on how many columns you have */
+  min-width: 720px;
+  display: flex;
+  gap: 16px;
+}
+
+/* Optional: enhance day card visuals */
+.day-card {
+  background-color: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.day-card:hover {
+  background-color: #e0f2fe;
 }

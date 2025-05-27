@@ -1,4 +1,4 @@
-/* Base Reset & Typography */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,8 +8,8 @@
 body, html, #root {
   height: 100%;
   font-family: 'Inter', sans-serif;
-  background-color: #f9fafb; /* very light gray */
-  color: #1f2937; /* dark gray */
+  background-color: #f9fafb; 
+  color: #1f2937; 
 }
 
 h1, h2, h3, h4, h5 {
@@ -24,7 +24,7 @@ p {
   margin-bottom: 0.5rem;
 }
 
-/* Layout Containers */
+
 .app-container {
   display: flex;
   height: 100vh;
@@ -42,7 +42,7 @@ p {
   gap: 1.5rem;
 }
 
-/* Scrollbar Styling */
+
 .main-content::-webkit-scrollbar {
   width: 8px;
 }
@@ -54,7 +54,7 @@ p {
   background: transparent;
 }
 
-/* Header */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -77,7 +77,7 @@ header {
   cursor: not-allowed;
 }
 
-/* Sidebar */
+
 .sidebar {
   width: 240px;
   background-color: #ffffff;
@@ -122,7 +122,7 @@ header {
   color: #4a6cf7;
 }
 
-/* Cards (used in health status, calendar appointments) */
+
 .card {
   background: #ffffff;
   padding: 1rem;
@@ -144,7 +144,7 @@ header {
   font-size: 1.1rem;
 }
 
-/* Calendar & Appointment Styling */
+
 .calendar-container {
   background: #ffffff;
   border-radius: 1rem;
@@ -204,7 +204,7 @@ header {
   color: #4a6cf7;
 }
 
-/* Activity Feed */
+
 .activity-feed {
   background: #ffffff;
   padding: 1rem;
@@ -231,7 +231,7 @@ header {
 .bar-4 { height: 70px; background-color: #4a6cf7; }
 .bar-5 { height: 50px; background-color: #4a6cf7; }
 
-/* Buttons */
+
 .add-btn {
   background-color: #4a6cf7;
   color: white;
@@ -247,7 +247,7 @@ header {
   background-color: #375cd8;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .app-container {
     flex-direction: column;
