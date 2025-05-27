@@ -2,10 +2,9 @@
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   padding: 1rem;
-  background-color: #f9fafb; /* Subtle background for clarity */
+  background-color: #f9fafb; 
 }
 
-/* Flex row for top section remains unchanged */
 .top-section {
   display: flex;
   flex-wrap: nowrap;
@@ -13,19 +12,17 @@
   width: max-content;
 }
 
-/* Prevent flex items from shrinking */
 .left-top, .right-top {
   flex-shrink: 0;
   background-color: #ffffff;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05); /* Subtle shadow for separation */
-  transition: box-shadow 0.3s ease; /* Smooth hover effect */
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease; 
 }
 
 .left-top:hover, .right-top:hover {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Scroll area styling */
 .calendar-scroll-wrapper {
   overflow-x: auto;
   max-width: 100%;
@@ -39,7 +36,6 @@
   background-color: #fff;
 }
 
-/* WebKit scrollbar enhancements */
 .calendar-scroll-wrapper::-webkit-scrollbar {
   height: 8px;
 }
@@ -70,14 +66,14 @@
   }
 }
 
-/* Calendar grid responsiveness */
+
 .calendar-scroll-wrapper .calendar-grid {
   min-width: 720px;
   display: flex;
   gap: 16px;
 }
 
-/* Optional: enhance day card visuals */
+
 .day-card {
   background-color: #f1f5f9;
   border: 1px solid #e2e8f0;
